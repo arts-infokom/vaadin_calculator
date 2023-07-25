@@ -89,12 +89,7 @@ public class TaschenrechnerUI extends Board {
 
     private void performCalculation() {
         switch (operation) {
-            case "+" -> {
-                value1 = calculatorService.add(value1, value2);
-                display.setValue(value1);
-                value2 = "";
-                operation = "";
-            }
+            case "+" -> System.out.println(value1 + " " + operation + " " + value2);
             case "-" -> System.out.println(value1 + " " + operation + " " + value2);
             case "*" -> System.out.println(value1 + " " + operation + " " + value2);
             case "/" -> System.out.println(value1 + " " + operation + " " + value2);
