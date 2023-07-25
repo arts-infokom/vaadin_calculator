@@ -1,0 +1,22 @@
+/* styles/taschenrechner.css */
+
+/* Grundstil für alle Buttons */
+.button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    margin: 5px;
+    background-color: #ff0000;
+    border: 1px solid #4ae545;
+}
+
+/* Stil für das Textfeld */
+.text-field {
+    width: 250px;
+    height: 60px;
+    font-size: 24px;
+    text-align: right;
+    margin: 5px;
+    background-color: #ff0000;
+    border: 1px solid #4ae545;
+}
