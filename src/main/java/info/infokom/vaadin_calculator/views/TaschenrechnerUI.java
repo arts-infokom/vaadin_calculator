@@ -90,8 +90,10 @@ public class TaschenrechnerUI extends Board {
     private void performCalculation() {
         switch (operation) {
             case "+" -> {
-                clearDisplay();
-                appendToDisplay(calculatorService.sum(value1, value2));
+                value1 = calculatorService.add(value1, value2);
+                display.setValue(value1);
+                value2 = "";
+                operation = "";
             }
             case "-" -> {
                 clearDisplay();
