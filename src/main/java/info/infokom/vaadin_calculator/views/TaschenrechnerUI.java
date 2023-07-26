@@ -93,7 +93,11 @@ public class TaschenrechnerUI extends Board {
                 clearDisplay();
                 appendToDisplay(calculatorService.sum(value1, value2));
             }
-            case "-" -> System.out.println(value1 + " " + operation + " " + value2);
+            case "-" -> {
+                clearDisplay();
+                String res = calculatorService.minus(value1, value2);
+                appendToDisplay(res);
+            }
             case "*" -> System.out.println(value1 + " " + operation + " " + value2);
             case "/" -> {
                 System.out.println(value1 + " " + operation + " " + value2);

@@ -9,6 +9,10 @@ public class CalculatorService {
         return ((Double) (Double.parseDouble(value1) / Double.parseDouble(value2))).toString();
     }
 
+
+    public String minus(String a, String b) {
+        return String.valueOf(Double.valueOf(a) - Double.valueOf(b));
+    }
     /**
      * Hier soll der Code für die Berechnung stehen.
      */
