@@ -5,7 +5,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class CalculatorService {
 
-    /**
-     * Hier soll der Code für die Berechnung stehen.
-     */
+
+    public String minus(String a, String b) {
+        return String.valueOf(Double.valueOf(a) - Double.valueOf(b));
+    }
 }
