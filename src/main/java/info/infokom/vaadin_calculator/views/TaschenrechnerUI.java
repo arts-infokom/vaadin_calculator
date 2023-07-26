@@ -92,7 +92,14 @@ public class TaschenrechnerUI extends Board {
             case "+" -> System.out.println(value1 + " " + operation + " " + value2);
             case "-" -> System.out.println(value1 + " " + operation + " " + value2);
             case "*" -> System.out.println(value1 + " " + operation + " " + value2);
-            case "/" -> System.out.println(value1 + " " + operation + " " + value2);
+            case "/" -> {
+                System.out.println(value1 + " " + operation + " " + value2);
+                if (value2.equals("0")) {
+                    display.setValue("ERROR: Division by zero!");
+                } else {
+                    display.setValue(calculatorService.divide(value1, value2));
+                }
+            }
             case "^" -> System.out.println(value1 + " " + operation + " " + value2);
             case "%" -> System.out.println(value1 + " " + operation + " " + value2);
         }
