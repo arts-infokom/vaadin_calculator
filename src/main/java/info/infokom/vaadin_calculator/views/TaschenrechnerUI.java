@@ -104,7 +104,11 @@ public class TaschenrechnerUI extends Board {
                 }
             }
             case "^" -> System.out.println(value1 + " " + operation + " " + value2);
-            case "%" -> System.out.println(value1 + " " + operation + " " + value2);
+            case "%" -> {
+                System.out.println(value1 + " " + operation + " " + value2);
+                clearDisplay();
+                appendToDisplay("" + Integer.parseInt(value1) % Integer.parseInt(value2) );
+            }
         }
     }
 
